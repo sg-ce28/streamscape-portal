@@ -1,0 +1,27 @@
+Streamscape (MOCK SITE FOR TRAINING) - image credits
+All photos are public domain or CC0, from Wikimedia Commons. No people appear in any photo.
+
+hero-coast.jpg  <-  Sunset Waianae coast -southwest Oahu - NOAA (cropped).jpg  (Public domain)
+    https://commons.wikimedia.org/wiki/File:Sunset_Waianae_coast_-southwest_Oahu_-_NOAA_(cropped).jpg
+about-coast.jpg  <-  Side of the mountain (Unsplash).jpg  (CC0)  by Jeremy Bishop tidesinourveins
+    https://commons.wikimedia.org/wiki/File:Side_of_the_mountain_(Unsplash).jpg
+tt-01-kona-skies.jpg  <-  KahoolaweAerial.jpg  (Public domain)  by Commander John Bortniak, NOAA Corps (ret.)
+    https://commons.wikimedia.org/wiki/File:KahoolaweAerial.jpg
+tt-02-long-reef.jpg  <-  Acropora coral ffs.jpg  (Public domain)  by Andy Collins, NOAA
+    https://commons.wikimedia.org/wiki/File:Acropora_coral_ffs.jpg
+tt-03-night-market.jpg  <-  Celebration Chinese Lantern Festival.jpg  (CC0)  by tookapic
+    https://commons.wikimedia.org/wiki/File:Celebration_Chinese_Lantern_Festival.jpg
+tt-04-signal-hill.jpg  <-  Berlin Funkturm fullmånen 2026-04-01 img02.jpg  (CC0)  by LarsMueller
+    https://commons.wikimedia.org/wiki/File:Berlin_Funkturm_fullm%C3%A5nen_2026-04-01_img02.jpg
+tt-05-tradewind.jpg  <-  Palm trees wind (Unsplash).jpg  (CC0)  by Kelley Bozarth kelleybdeal
+    https://commons.wikimedia.org/wiki/File:Palm_trees_wind_(Unsplash).jpg
+tt-06-paniolo.jpg  <-  PASTURE - NARA - 554161.jpg  (Public domain)  by Charles O'Rear
+    https://commons.wikimedia.org/wiki/File:PASTURE_-_NARA_-_554161.jpg
+tt-07-harbor-lights.jpg  <-  Kaohsiung Lighthouse at night 2026 03 27 184338.jpg  (CC0)  by The Nature Box
+    https://commons.wikimedia.org/wiki/File:Kaohsiung_Lighthouse_at_night_2026_03_27_184338.jpg
+tt-08-understudy.jpg  <-  Paramount Theatre Seating View (empty).jpg  (CC0)  by Avacado-pie
+    https://commons.wikimedia.org/wiki/File:Paramount_Theatre_Seating_View_(empty).jpg
+tt-09-cold-front.jpg  <-  Turbulent gust front - NOAA.jpg  (Public domain)  by NOAA Photo Library, NOAA Central Library  OAR/ERL/National Severe Storms Laborat
+    https://commons.wikimedia.org/wiki/File:Turbulent_gust_front_-_NOAA.jpg
+tt-10-waialle.jpg  <-  Workbench and tools (Unsplash).jpg  (CC0)  by Jeff Sheldon ugmonk
+    https://commons.wikimedia.org/wiki/File:Workbench_and_tools_(Unsplash).jpg

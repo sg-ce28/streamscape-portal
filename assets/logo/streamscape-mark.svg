@@ -1,0 +1,7 @@
+<!-- Streamscape mark (MOCK SITE FOR TRAINING). From the Claude Design handoff; provenance metadata removed to keep the file small. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Streamscape">
+  <rect width="64" height="64" fill="#e8365f"></rect>
+  <path d="M22 14 L52 32 L22 50 Z" fill="#0a0a0a"></path>
+  <rect x="16" y="32" width="40" height="3.4" fill="#e8365f"></rect>
+  <rect x="16" y="40.6" width="40" height="2.8" fill="#e8365f"></rect>
+</svg>

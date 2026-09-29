@@ -1,0 +1,41 @@
+<!-- MOCK SITE FOR TRAINING. Not a real organization. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audience · Streamscape partner console</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="console">
+  <aside class="console__rail">
+    <div><a class="logo" href="dashboard.html"><span class="logo__mark">S</span>Streamscape</a><div class="tag">Partner console</div></div>
+    <nav class="pnav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="audience.html">Audience</a>
+      <a href="payouts.html">Payouts</a>
+      <a href="exports.html">Data export</a>
+    </nav>
+    <div class="foot"><div id="who">Partner</div><a href="#" id="logout">Sign out</a></div>
+  </aside>
+  <main class="console__main">
+    <div class="pagehead"><div><div class="crumb">Partner console · Audience</div><h1>Audience insight</h1></div></div>
+    <div class="callout">Audience insight is meant to be aggregate only. The sample below lists individual viewer rows, and it includes viewers of every partner's titles.</div>
+    <div class="card">
+      <div class="card__head"><h2>Recent viewer sample</h2></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Viewer ID</th><th>Region</th><th>Plan</th><th>Device</th><th>Watched</th></tr></thead>
+        <tbody id="audience-body"></tbody>
+      </table></div>
+      <p class="hint" id="audience-note"></p>
+    </div>
+    <p class="mock-note">Training site. Not a real organization. Viewer IDs are invented.</p>
+  </main>
+</div>
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/console.js"></script>
+</body>
+</html>

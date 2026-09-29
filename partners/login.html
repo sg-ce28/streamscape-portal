@@ -1,0 +1,31 @@
+<!-- MOCK SITE FOR TRAINING. Not a real organization. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partner sign-in · Streamscape</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="auth">
+<main class="auth__card">
+  <a class="logo" href="../partners.html"><span class="logo__mark">S</span>Streamscape</a>
+  <div class="tag">Partner console</div>
+  <p class="muted" style="margin:12px 0 18px">Sign in with the account from your welcome email.</p>
+
+  <div id="login-error" class="alert alert--bad" hidden></div>
+  <form id="login-form">
+    <div class="field"><label for="username">Username</label><input id="username" type="text" autocomplete="username" required></div>
+    <div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required></div>
+    <button class="btn btn--block" type="submit">Sign in</button>
+  </form>
+
+  <p class="hint" style="margin-top:14px">New partner? <a href="onboarding.html">Partner onboarding</a>. Trouble? partners@streamscape.example</p>
+  <p class="hint"><a href="../index.html">Back to Streamscape</a></p>
+  <p class="mock-note">Training site. Not a real organization.</p>
+</main>
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/login.js"></script>
+</body>
+</html>

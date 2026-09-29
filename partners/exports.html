@@ -1,0 +1,56 @@
+<!-- MOCK SITE FOR TRAINING. Not a real organization. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data export · Streamscape partner console</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="console">
+  <aside class="console__rail">
+    <div><a class="logo" href="dashboard.html"><span class="logo__mark">S</span>Streamscape</a><div class="tag">Partner console</div></div>
+    <nav class="pnav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="audience.html">Audience</a>
+      <a href="payouts.html">Payouts</a>
+      <a href="exports.html">Data export</a>
+    </nav>
+    <div class="foot"><div id="who">Partner</div><a href="#" id="logout">Sign out</a></div>
+  </aside>
+  <main class="console__main">
+    <div class="pagehead"><div><div class="crumb">Partner console · Data export</div><h1>Nightly data feed</h1></div></div>
+
+    <div class="callout">
+      Streamscape copies partner analytics to an outside vendor every night with a data-extraction program called <strong>CatalogPull</strong>.
+      The program is provided below for analysis, next to the configuration the vendor was handed. Reverse-engineer the program to confirm what it really collects, how it authenticates, and where it sends — and what the description leaves out.
+    </div>
+
+    <div class="card">
+      <div class="card__head"><h2>The extraction program</h2><span class="badge badge--muted">read-only · inert</span></div>
+      <p class="muted">CatalogPull is a small program. Open it and reverse-engineer it: work out exactly what it collects, how it authenticates, and where it sends. Decoding its configuration is the key step. It performs no network requests and runs only against a bundled sample — you are meant to read it, not run it.</p>
+      <p><a class="btn btn--ghost" href="../assets/catalogpull.min.js" target="_blank" rel="noopener">Open catalogpull.min.js</a></p>
+    </div>
+
+    <div class="card">
+      <div class="card__head"><h2>CatalogPull configuration <span class="badge badge--muted">what the vendor was told</span></h2></div>
+      <div class="table-wrap" id="feed-config"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__head"><h2>Preview the feed</h2><span class="badge badge--muted">training only</span></div>
+      <p class="muted">This button renders what one night's file would contain, using the data already loaded in your browser. It contacts no network and sends nothing.</p>
+      <button class="btn btn--ghost" type="button" id="feed-preview-btn">Preview one night's file</button>
+      <pre class="datadump" id="feed-preview" hidden></pre>
+    </div>
+
+    <p class="mock-note">Training site. Not a real organization. The token and address above are fake.</p>
+  </main>
+</div>
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/console.js"></script>
+</body>
+</html>
