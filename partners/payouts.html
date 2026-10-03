@@ -23,6 +23,7 @@
   <main class="console__main">
     <div class="pagehead"><div><div class="crumb">Partner console · Payouts</div><h1>Quarterly payouts</h1></div></div>
     <div class="callout">This page shows every partner's payout, not just yours.</div>
+    <div class="callout">Reviewer note: a payment reference plus a partner name is routing data an outsider could use for targeted fraud. Money data needs tighter scoping than catalog listings. The exposure marker is assembled by the telemetry helper this page loads; reverse it. (assets/js/telemetry.min.js)</div>
     <div class="card"><div class="table-wrap"><table>
       <thead><tr><th>Partner</th><th>Quarter</th><th>Amount</th><th>Method</th><th>Reference</th></tr></thead>
       <tbody id="payouts-body"></tbody>
@@ -32,6 +33,7 @@
 </div>
 <script src="../assets/js/data.js"></script>
 <script src="../assets/js/app.js"></script>
+<script src="../assets/js/telemetry.min.js"></script>
 <script src="../assets/js/console.js"></script>
 </body>
 </html>
