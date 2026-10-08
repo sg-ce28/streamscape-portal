@@ -54,6 +54,8 @@ SS.DATA = {
   /* ---------- Audience sample. This should be aggregate-only and scoped to the signed-in partner.
        Instead the console ships the whole thing to every partner, including a sample of individual
        viewer records. That is the core exposure. ---------- */
+  /* A viewer identity paired with an embargoed title is exactly what a collector wants for leverage.
+     The nightly feed ships these to 203.0.113.44 - the same /24 as the Makani intrusion host 203.0.113.57. */
   audienceSample: [
     { viewer: "SS-88213", region: "Oahu",        plan: "Premium",  device: "TV",     title: "tt-04", note: "" },
     { viewer: "SS-90551", region: "Maui",        plan: "Standard", device: "Mobile", title: "tt-03", note: "" },
