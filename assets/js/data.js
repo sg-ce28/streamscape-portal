@@ -19,7 +19,7 @@ SS.DATA = {
     { id: "tt-09", kind: "movie", title: "Cold Front",            year: 2022, genre: "Action",      art: "#3a80a5", rating: "PG-13", status: "released", partner: "Summit North",     blurb: "A storm traps a crew on a research base." },
     { id: "tt-10", kind: "tv",    title: "Made in Waiʻalle", year: 2024, genre: "Documentary", art: "#3aa55f", rating: "TV-PG", status: "released", partner: "Palila Media",     blurb: "Six makers, six trades, one town." },
     /* The next three are NOT released. They should never appear on the public site or in a partner's feed that
-       isn't theirs. They are embargoed. FLAG{embargo-should-mean-embargo} */
+       isn't theirs. They are embargoed. */
     { id: "tt-11", kind: "movie", title: "Kona Skies 2",          year: 2026, genre: "Drama",       art: "#243b57", rating: "NR", status: "embargoed", partner: "Lehua Pictures", release: "2026-12-11", blurb: "UNRELEASED. Sequel. Announcement embargoed until Dec." },
     { id: "tt-12", kind: "tv",    title: "Signal Hill S3",        year: 2026, genre: "Sci-Fi",      art: "#0f2a3a", rating: "NR", status: "embargoed", partner: "Palila Media",   release: "2026-10-30", blurb: "UNRELEASED. Season 3. Cast not yet announced." },
     { id: "tt-13", kind: "music", title: "Reef Records — Untitled 2026", year: 2026, genre: "Music", art: "#0f2a2a", rating: "NR", status: "embargoed", partner: "Reef Records", release: "2026-11-20", blurb: "UNRELEASED. Compilation. Track list confidential." }
@@ -32,7 +32,7 @@ SS.DATA = {
     { code: "reef",   name: "Reef Records",   user: "reef",   pass: "Preview2026", plan: "Label",      titles: ["tt-05","tt-06","tt-13"] },
     { code: "summit", name: "Summit North",   user: "summit", pass: "Preview2026", plan: "Studio",     titles: ["tt-09"] }
   ],
-  sharedNote: "All partner logins use the same starter password 'Preview2026' from the welcome email. Partners are asked to change it; none have. FLAG{one-password-for-everyone}",
+  sharedNote: "All partner logins use the same starter password 'Preview2026' from the welcome email. Partners are asked to change it; none have.",
 
   /* ---------- Performance rows (per title). This is the payload the console shows and the feed copies. ---------- */
   performance: [
@@ -53,7 +53,7 @@ SS.DATA = {
 
   /* ---------- Audience sample. This should be aggregate-only and scoped to the signed-in partner.
        Instead the console ships the whole thing to every partner, including a sample of individual
-       viewer records. That is the core exposure. FLAG{aggregate-not-individuals} ---------- */
+       viewer records. That is the core exposure. ---------- */
   audienceSample: [
     { viewer: "SS-88213", region: "Oahu",        plan: "Premium",  device: "TV",     title: "tt-04", note: "" },
     { viewer: "SS-90551", region: "Maui",        plan: "Standard", device: "Mobile", title: "tt-03", note: "" },
@@ -61,7 +61,7 @@ SS.DATA = {
     { viewer: "SS-77310", region: "Kauai",       plan: "Standard", device: "TV",     title: "tt-08", note: "" },
     { viewer: "SS-45188", region: "Mainland US", plan: "Premium",  device: "Tablet", title: "tt-02", note: "" },
     { viewer: "SS-60927", region: "Oahu",        plan: "Standard", device: "Mobile", title: "tt-05", note: "" },
-    { viewer: "SS-33471", region: "Oahu",        plan: "Premium",  device: "TV",     title: "tt-12", note: "Watched an EMBARGOED screener. Pairing an unreleased title with an individual viewer is a second, worse exposure. Marker (reversed): }esrow-si-ytitnedi-sulp-ograbme{GALF" },
+    { viewer: "SS-33471", region: "Oahu",        plan: "Premium",  device: "TV",     title: "tt-12", note: "Watched an EMBARGOED screener. Pairing an unreleased title with an individual viewer is a second, worse exposure." },
     { viewer: "SS-51840", region: "Maui",        plan: "Standard", device: "Web",    title: "tt-07", note: "" }
   ],
   audienceNote: "Sample of 8 of 512,000 viewer rows. Full rows include a Streamscape viewer id, region, plan, and device. Names and emails are NOT in this feed, but the viewer id joins to the billing system.",
@@ -76,14 +76,13 @@ SS.DATA = {
 
   /* ---------- The nightly data feed ("CatalogPull"). This is a DESCRIPTION of an internal job,
        left readable in the console. It is not a running program; the page never contacts a network.
-       It documents WHAT the job copies and WHERE, which is the thing the assessment reconstructs.
-       FLAG{the-config-is-the-blueprint} ---------- */
+       It documents WHAT the job copies and WHERE, which is the thing the assessment reconstructs. ---------- */
   feed: {
     name: "CatalogPull nightly sync",
     schedule: "Daily 03:15 HST",
     source: "Partner console dataset (this same data)",
     destination: "sftp://203.0.113.44/streamscape/partner-analytics/  (third-party analytics vendor)",
-    auth: "Static token in the config below. Same token for every partner's export. FLAG{one-token-fits-all}",
+    auth: "Static token in the config below. Same token for every partner's export.",
     token: "ss_feed_FAKE-TOKEN-DO-NOT-USE-0000",
     scope: "ALL partners, ALL titles (including embargoed), plus the audience viewer sample.",
     format: "One JSON file per night: catalog + performance + audienceSample + payouts.",

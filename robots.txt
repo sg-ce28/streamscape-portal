@@ -5,4 +5,3 @@ Disallow: /partners/exports.html
 Allow: /
 Sitemap: sitemap.xml
 
-# FLAG{disallow-is-a-directory}
