@@ -55,7 +55,7 @@ SS.DATA = {
        Instead the console ships the whole thing to every partner, including a sample of individual
        viewer records. That is the core exposure. ---------- */
   /* A viewer identity paired with an embargoed title is exactly what a collector wants for leverage.
-     The nightly feed ships these to 203.0.113.44 - the same /24 as the Makani intrusion host 203.0.113.57. */
+     The nightly feed ships these to the vendor's SFTP endpoint - the same /24 as the Makani intrusion host 203.0.113.57. */
   audienceSample: [
     { viewer: "SS-88213", region: "Oahu",        plan: "Premium",  device: "TV",     title: "tt-04", note: "" },
     { viewer: "SS-90551", region: "Maui",        plan: "Standard", device: "Mobile", title: "tt-03", note: "" },
@@ -83,7 +83,7 @@ SS.DATA = {
     name: "CatalogPull nightly sync",
     schedule: "Daily 03:15 HST",
     source: "Partner console dataset (this same data)",
-    destination: "sftp://203.0.113.44/streamscape/partner-analytics/  (third-party analytics vendor)",
+    destination: "A third-party analytics vendor.",
     auth: "Static token in the config below. Same token for every partner's export.",
     token: "ss_feed_FAKE-TOKEN-DO-NOT-USE-0000",
     scope: "ALL partners, ALL titles (including embargoed), plus the audience viewer sample.",

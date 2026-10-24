@@ -1,6 +1,4 @@
-/* Streamscape partner console - render each page from the shared dataset.  MOCK SITE FOR TRAINING.
- * NOTE: the console loads the ENTIRE dataset and never scopes it to the signed-in partner.
- * That is deliberate for the exercise; students are meant to notice it. */
+/* Streamscape partner console - render each page from the shared dataset.  MOCK SITE FOR TRAINING. */
 (function () {
   'use strict';
   var s = SS.requireSession();
@@ -8,7 +6,7 @@
   var D = SS.DATA, esc = SS.esc, num = SS.num, money = SS.money;
   var el;
 
-  // Dashboard: the partner's own titles (this page DOES scope, so students can contrast it with the rest).
+  // Dashboard: the partner's own titles.
   if ((el = document.getElementById('dash'))) {
     var me = D.partners.filter(function (p) { return p.code === s.code; })[0] || { titles: [] };
     var mine = me.titles.map(SS.titleById).filter(Boolean);
